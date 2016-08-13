@@ -1,0 +1,11 @@
+<layers>
+    
+    <!-- Disable the Theme layer when uninstalled -->
+    
+    <layer
+        name="my315ok.theme"
+        interface="my315ok.theme.browser.interfaces.IThemeSpecific"
+        remove="True"
+        />
+
+</layers>
