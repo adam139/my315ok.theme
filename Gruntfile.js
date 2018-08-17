@@ -14,14 +14,14 @@ module.exports = function (grunt) {
                     strictMath: false,
                     sourceMap: true,
                     outputSourceFiles: true,
-                    sourceMapURL: '++theme++my315ok.theme/less/barceloneta-compiled.css.map',
-                    sourceMapFilename: 'my315ok/theme/theme/less/barceloneta-compiled.css.map',
+                    sourceMapURL: '++theme++my315ok.theme/less/my315ok-compiled.css.map',
+                    sourceMapFilename: 'my315ok/theme/theme/less/my315ok-compiled.css.map',
                     modifyVars: {
                         "isPlone": "false"
                     }
                 },
                 files: {
-                    'my315ok/theme/theme/less/barceloneta-compiled.css': 'my315ok/theme/theme/less/barceloneta.plone.local.less',
+                    'my315ok/theme/theme/less/my315ok-compiled.css': 'my315ok/theme/theme/less/custom.less',
                 }
             }
         },
@@ -62,7 +62,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default', ['less']);
     grunt.registerTask('bsync', ["browserSync:html", "watch"]);
     grunt.registerTask('plone-bsync', ["browserSync:plone", "watch"]);
 };
