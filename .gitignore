@@ -3,12 +3,14 @@
 /develop-eggs
 /bin
 /node_modules
+node_modules
 /.settings
 *.pyc
 *.egg
 *.egg-info
 *.pyo
 *.mo
+package-lock.json
 .project
 .mr.developer.cfg
 .installed.cfg
